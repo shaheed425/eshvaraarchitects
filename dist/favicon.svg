@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
-  <rect width="100" height="100" fill="#201E1C"/>
-  <!-- Elegant geometric architectural E / brick motif -->
-  <path d="M26 24H74V34H38V45H68V55H38V66H74V76H26V24Z" fill="#F1EEE8"/>
-  <rect x="70" y="47" width="8" height="6" fill="#B49A62"/>
-  <line x1="22" y1="84" x2="78" y2="84" stroke="#B49A62" stroke-width="2"/>
-</svg>

@@ -130,11 +130,13 @@ export default function Projects() {
                       </div>
 
                       {/* Badges */}
-                      <div className="absolute top-3 left-3 px-3 py-0.5 rounded-full bg-[#201E1C]/80 text-[#B49A62] text-[10px] font-sans font-bold tracking-widest uppercase">
-                        {project.number}
-                      </div>
-                      <div className="absolute top-3 right-3 px-3 py-0.5 rounded-full bg-[#F1EEE8]/90 text-[#201E1C] text-[10px] font-sans font-bold uppercase tracking-wider">
-                        {project.category}
+                      <div className="absolute top-2.5 xs:top-3 inset-x-2.5 xs:inset-x-3 flex items-center justify-between gap-1.5 pointer-events-none z-10">
+                        <div className="px-2.5 xs:px-3 py-0.5 rounded-full bg-[#201E1C]/80 text-[#B49A62] text-[10px] font-sans font-bold tracking-widest uppercase">
+                          {project.number}
+                        </div>
+                        <div className="px-2.5 xs:px-3 py-0.5 rounded-full bg-[#F1EEE8]/90 text-[#201E1C] text-[10px] font-sans font-bold uppercase tracking-wider">
+                          {project.category}
+                        </div>
                       </div>
                     </div>
 

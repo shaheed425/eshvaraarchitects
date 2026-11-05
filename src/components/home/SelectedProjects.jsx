@@ -165,12 +165,14 @@ export default function SelectedProjects() {
                 </div>
 
                 {/* Badges */}
-                <div className="absolute top-5 left-5 px-3.5 py-1 rounded-full bg-[#201E1C]/80 backdrop-blur-md text-[#B49A62] font-sans text-xs font-semibold tracking-widest uppercase border border-[#B49A62]/30">
-                  Project {projects[0].number} • {projects[0].category}
-                </div>
+                <div className="absolute top-3 xs:top-4 sm:top-5 inset-x-3 xs:inset-x-4 sm:inset-x-5 flex flex-wrap items-center justify-between gap-2 z-10 pointer-events-none">
+                  <div className="px-2.5 xs:px-3 sm:px-3.5 py-0.5 xs:py-1 rounded-full bg-[#201E1C]/85 backdrop-blur-md text-[#B49A62] font-sans text-[9.5px] xs:text-[11px] sm:text-xs font-semibold tracking-wider sm:tracking-widest uppercase border border-[#B49A62]/30 shrink-0">
+                    Project {projects[0].number} • {projects[0].category}
+                  </div>
 
-                <div className="absolute top-5 right-5 px-3.5 py-1 rounded-full bg-[#B49A62] text-[#201E1C] font-sans text-[10px] font-bold tracking-wider uppercase">
-                  {projects[0].status}
+                  <div className="px-2.5 xs:px-3 sm:px-3.5 py-0.5 xs:py-1 rounded-full bg-[#B49A62] text-[#161513] font-sans text-[9px] xs:text-[9.5px] sm:text-[10px] font-bold tracking-wider uppercase shrink-0 shadow-md">
+                    {projects[0].status}
+                  </div>
                 </div>
               </div>
 
@@ -236,11 +238,13 @@ export default function SelectedProjects() {
                       <Maximize2 className="w-4 h-4 text-[#B49A62]" />
                     </div>
                   </div>
-                  <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#201E1C]/80 text-[#B49A62] font-sans text-xs tracking-widest uppercase">
-                    Interiors • 2 / 6
-                  </div>
-                  <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#F1EEE8]/90 text-[#201E1C] font-sans text-[10px] font-bold uppercase tracking-wider">
-                    {projects[1].category}
+                  <div className="absolute top-3 xs:top-4 inset-x-3 xs:inset-x-4 flex flex-wrap items-center justify-between gap-1.5 pointer-events-none z-10">
+                    <div className="px-2.5 xs:px-3 py-0.5 xs:py-1 rounded-full bg-[#201E1C]/85 text-[#B49A62] font-sans text-[9.5px] xs:text-xs tracking-wider sm:tracking-widest uppercase">
+                      Interiors • 2 / 6
+                    </div>
+                    <div className="px-2.5 xs:px-3 py-0.5 xs:py-1 rounded-full bg-[#F1EEE8]/90 text-[#201E1C] font-sans text-[9px] xs:text-[10px] font-bold uppercase tracking-wider">
+                      {projects[1].category}
+                    </div>
                   </div>
                 </div>
 
@@ -299,11 +303,13 @@ export default function SelectedProjects() {
                       <Maximize2 className="w-4 h-4 text-[#B49A62]" />
                     </div>
                   </div>
-                  <div className="absolute top-4 left-4 px-3 py-1 rounded-full bg-[#201E1C]/80 text-[#B49A62] font-sans text-xs tracking-widest uppercase">
-                    Interiors • 3 / 6
-                  </div>
-                  <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-[#F1EEE8]/90 text-[#201E1C] font-sans text-[10px] font-bold uppercase tracking-wider">
-                    {projects[2].category}
+                  <div className="absolute top-3 xs:top-4 inset-x-3 xs:inset-x-4 flex flex-wrap items-center justify-between gap-1.5 pointer-events-none z-10">
+                    <div className="px-2.5 xs:px-3 py-0.5 xs:py-1 rounded-full bg-[#201E1C]/85 text-[#B49A62] font-sans text-[9.5px] xs:text-xs tracking-wider sm:tracking-widest uppercase">
+                      Interiors • 3 / 6
+                    </div>
+                    <div className="px-2.5 xs:px-3 py-0.5 xs:py-1 rounded-full bg-[#F1EEE8]/90 text-[#201E1C] font-sans text-[9px] xs:text-[10px] font-bold uppercase tracking-wider">
+                      {projects[2].category}
+                    </div>
                   </div>
                 </div>
 
