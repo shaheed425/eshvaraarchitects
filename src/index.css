@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-dark: #201E1C;
+  --color-warm-ivory: #F1EEE8;
+  --color-antique-gold: #C4A66B;
+  --color-secondary-beige: #D9D0C1;
+  --color-stone-grey: #77766F;
+  --color-white: #FFFFFF;
+  
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Manrope", system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+    color: var(--color-primary-dark);
+    background-color: var(--color-warm-ivory);
+  }
+
+  ::selection {
+    background-color: var(--color-antique-gold);
+    color: #FFFFFF;
+  }
+
+  /* Custom minimal scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F1EEE8;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #D9D0C1;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #B49A62;
+  }
+}
+
+.font-editorial {
+  font-family: var(--font-serif);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-body {
+  font-family: var(--font-sans);
+}
+
+/* Image zoom transition */
+.img-editorial-zoom {
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+}
+
+.group:hover .img-editorial-zoom {
+  transform: scale(1.05);
+}
+
+/* Rotating Stamp Animation */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 28s linear infinite;
+}
+
+.animate-spin-reverse-slow {
+  animation: spin-slow 35s linear infinite reverse;
+}
+
+/* Hide scrollbars for horizontal showcases */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Reduced Hero height specifically for tall Pro series mobile devices (iPhone 14 Pro, 15 Pro, 16 Pro, 16 Pro Max) */
+@media (max-width: 1023px) and (min-height: 820px) {
+  .hero-pro-height {
+    min-height: 84svh !important;
+    min-height: 84dvh !important;
+    max-height: 750px !important;
+  }
+}
+
