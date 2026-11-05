@@ -63,7 +63,7 @@ export default function Services() {
                         className="w-full h-full object-cover img-editorial-zoom filter grayscale-[10%] group-hover:grayscale-0 transition-all duration-700"
                         onError={(e) => {
                           e.currentTarget.onerror = null;
-                          e.currentTarget.src = '/services/landscape-architecture.jpg';
+                          e.currentTarget.src = '/services/landscape-architecture.webp';
                         }}
                       />
                       <div className="absolute top-4 left-4 px-3 py-1 rounded bg-[#201E1C]/80 text-[#B49A62] text-xs font-sans font-bold tracking-widest uppercase">
@@ -158,7 +158,7 @@ export default function Services() {
                           className="w-full h-full object-cover img-editorial-zoom filter grayscale-[15%] group-hover:grayscale-0 transition-all duration-700"
                           onError={(e) => {
                             e.currentTarget.onerror = null;
-                            e.currentTarget.src = '/capabilities/welding-fabrication.jpg';
+                            e.currentTarget.src = '/capabilities/welding-fabrication.webp';
                           }}
                         />
                         <div className="absolute top-3 left-3 px-2 py-0.5 rounded bg-[#201E1C]/85 text-[10px] text-[#B49A62] font-bold">

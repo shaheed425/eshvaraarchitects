@@ -57,7 +57,7 @@ export default function Team() {
                       className="w-full h-full object-cover filter grayscale-[15%]"
                       onError={(e) => {
                         e.currentTarget.onerror = null;
-                        e.currentTarget.src = leader.fallbackImage || '/concept-dusk-residence.jpg';
+                        e.currentTarget.src = leader.fallbackImage || '/concept-dusk-residence.webp';
                       }}
                     />
                   </div>

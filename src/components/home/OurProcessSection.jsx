@@ -108,7 +108,7 @@ export default function OurProcessSection() {
                 className="w-full h-full object-cover filter grayscale-[10%]"
                 onError={(e) => {
                   e.currentTarget.onerror = null;
-                  e.currentTarget.src = '/process/stage-01-concept.jpg';
+                  e.currentTarget.src = '/process/stage-01-concept.webp';
                 }}
               />
             </div>

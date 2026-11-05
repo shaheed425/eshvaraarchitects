@@ -193,7 +193,7 @@ export default function ArchitecturalShowcase() {
                       loading="eager"
                       onError={(e) => {
                         e.currentTarget.onerror = null;
-                        e.currentTarget.src = '/hero-dusk-residence-clean.jpg';
+                        e.currentTarget.src = '/hero-dusk-residence-clean.webp';
                       }}
                     />
 

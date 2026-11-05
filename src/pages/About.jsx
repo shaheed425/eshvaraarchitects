@@ -63,12 +63,12 @@ export default function About() {
             <div className="lg:col-span-6 relative">
               <div className="relative aspect-[4/5] overflow-hidden bg-[#201E1C] shadow-2xl">
                 <img
-                  src="/residence-clean-crop.jpg"
+                  src="/residence-clean-crop.webp"
                   alt="Eshvara Design Architects Studio"
                   className="w-full h-full object-cover filter grayscale-[10%]"
                   onError={(e) => {
                     e.currentTarget.onerror = null;
-                    e.currentTarget.src = '/hero-dusk-residence-clean.jpg';
+                    e.currentTarget.src = '/hero-dusk-residence-clean.webp';
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#201E1C]/80 via-transparent to-transparent" />

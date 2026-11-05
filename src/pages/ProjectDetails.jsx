@@ -37,7 +37,7 @@ export default function ProjectDetails() {
               className="w-full h-full object-cover filter brightness-[0.7] contrast-[1.05]"
               onError={(e) => {
                 e.currentTarget.onerror = null;
-                e.currentTarget.src = '/residence-clean-crop.jpg';
+                e.currentTarget.src = '/residence-clean-crop.webp';
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#201E1C] via-[#201E1C]/35 to-transparent" />
@@ -162,7 +162,7 @@ export default function ProjectDetails() {
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       e.currentTarget.onerror = null;
-                      e.currentTarget.src = renovationView === 'proposed' ? '/hero-dusk-residence-clean.jpg' : '/renovation-before.jpg';
+                      e.currentTarget.src = renovationView === 'proposed' ? '/hero-dusk-residence-clean.webp' : '/renovation-before.webp';
                     }}
                   />
                   <div className="absolute bottom-4 left-4 px-3 py-1 rounded bg-[#201E1C]/85 text-xs text-[#B49A62] font-sans font-bold uppercase tracking-wider">
@@ -300,7 +300,7 @@ export default function ProjectDetails() {
                       className="w-full h-full object-cover img-editorial-zoom filter grayscale-[10%] group-hover:grayscale-0 transition-all duration-700"
                       onError={(e) => {
                         e.currentTarget.onerror = null;
-                        e.currentTarget.src = '/residence-clean-crop.jpg';
+                        e.currentTarget.src = '/residence-clean-crop.webp';
                       }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#201E1C]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">

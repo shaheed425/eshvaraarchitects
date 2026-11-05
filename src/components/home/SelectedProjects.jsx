@@ -26,7 +26,7 @@ export default function SelectedProjects() {
       }
       if (renovationView === 'combined') {
         return {
-          image: p.beforeAfter.combined?.image || '/renovation-before-after-combined.jpg',
+          image: p.beforeAfter.combined?.image || '/renovation-before-after-combined.webp',
           title: p.beforeAfter.combined?.title || 'Before & After Transformation',
           category: p.category,
           location: p.location,
@@ -42,7 +42,7 @@ export default function SelectedProjects() {
       };
     }
     return {
-      image: p.heroImage || '/hero-contemporary-residence.jpg',
+      image: p.heroImage || '/hero-contemporary-residence.webp',
       title: p.title,
       category: p.category,
       location: p.location,
@@ -52,7 +52,7 @@ export default function SelectedProjects() {
 
   const getRenovationData = () => {
     const ba = renoProject?.beforeAfter;
-    if (!ba) return { image: '/renovation-after.jpg', title: '', desc: '', notes: '', badge: '' };
+    if (!ba) return { image: '/renovation-after.webp', title: '', desc: '', notes: '', badge: '' };
     if (renovationView === 'before') {
       return {
         image: ba.existing.image,
@@ -64,7 +64,7 @@ export default function SelectedProjects() {
     }
     if (renovationView === 'combined') {
       return {
-        image: ba.combined?.image || '/renovation-before-after-combined.jpg',
+        image: ba.combined?.image || '/renovation-before-after-combined.webp',
         title: ba.combined?.title || 'Before & After Transformation',
         desc: ba.combined?.desc || 'Official transformation comparison.',
         notes: ba.combined?.notes || '@eshvaradesignarchitects showcase.',
@@ -153,7 +153,7 @@ export default function SelectedProjects() {
                   className="w-full h-full object-cover group-hover:scale-105 filter brightness-[0.98] contrast-[1.03] transition-transform duration-700 ease-out"
                   onError={(e) => {
                     e.currentTarget.onerror = null;
-                    e.currentTarget.src = '/hero-contemporary-residence.jpg';
+                    e.currentTarget.src = '/hero-contemporary-residence.webp';
                   }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#201E1C]/80 via-transparent to-transparent opacity-80" />
@@ -230,7 +230,7 @@ export default function SelectedProjects() {
                     className="w-full h-full object-cover group-hover:scale-105 filter brightness-[0.98] contrast-[1.03] transition-transform duration-700 ease-out"
                     onError={(e) => {
                       e.currentTarget.onerror = null;
-                      e.currentTarget.src = '/residence-living-room.jpg';
+                      e.currentTarget.src = '/residence-living-room.webp';
                     }}
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -295,7 +295,7 @@ export default function SelectedProjects() {
                     className="w-full h-full object-cover group-hover:scale-105 filter brightness-[0.98] contrast-[1.03] transition-transform duration-700 ease-out"
                     onError={(e) => {
                       e.currentTarget.onerror = null;
-                      e.currentTarget.src = '/residence-lounge.jpg';
+                      e.currentTarget.src = '/residence-lounge.webp';
                     }}
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
@@ -415,7 +415,7 @@ export default function SelectedProjects() {
                     }`}
                     onError={(e) => {
                       e.currentTarget.onerror = null;
-                      e.currentTarget.src = '/renovation-after.jpg';
+                      e.currentTarget.src = '/renovation-after.webp';
                     }}
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">

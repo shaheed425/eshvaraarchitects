@@ -17,7 +17,7 @@ export const people = {
         "New Design Concepts & Research"
       ],
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
-      fallbackImage: "/concept-dusk-residence.jpg"
+      fallbackImage: "/concept-dusk-residence.webp"
     },
     {
       id: "k-sreeramachandran",
@@ -34,7 +34,7 @@ export const people = {
         "Turnkey Project Execution"
       ],
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
-      fallbackImage: "/hero-dusk-residence-clean.jpg"
+      fallbackImage: "/hero-dusk-residence-clean.webp"
     }
   ],
   workforce: {

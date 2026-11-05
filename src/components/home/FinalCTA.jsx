@@ -10,7 +10,7 @@ export default function FinalCTA() {
       {/* Background Architectural Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/hero-dusk-residence-clean.jpg"
+          src="/hero-dusk-residence-clean.webp"
           alt="Eshvara Design Architects Final Call to Action"
           className="w-full h-full object-cover filter brightness-[0.28] contrast-[1.1]"
           onError={(e) => {

@@ -9,7 +9,7 @@ export const projects = [
     isProposed: false,
     location: "Pathanamthitta, Kerala",
     siteArea: "3,800 sq.ft",
-    heroImage: "/hero-contemporary-residence.jpg",
+    heroImage: "/hero-contemporary-residence.webp",
     summary: "A contemporary Kerala residence structured around natural stone textures, warm timber louvers, and cantilevered glass balconies.",
     description: "Residence 01 explores tactile regional materiality and passive microclimatic cooling. The exterior composition pairs flamed grey stone compound walls with warm timber screens, glass balustrades, and a pitched roof pavilion volume nestled into tropical greenery.",
     details: [
@@ -26,19 +26,19 @@ export const projects = [
     ],
     gallery: [
       {
-        url: "/hero-contemporary-residence.jpg",
+        url: "/hero-contemporary-residence.webp",
         caption: "Front elevation featuring stone plinth, timber louvers and glass balcony."
       },
       {
-        url: "/residence-living-room.jpg",
+        url: "/residence-living-room.webp",
         caption: "Living room interior with bespoke timber fins and floating credenza."
       },
       {
-        url: "/residence-lounge.jpg",
+        url: "/residence-lounge.webp",
         caption: "Lounge with slatted accent wall and traditional carved teak cabinet."
       },
       {
-        url: "/residence-kitchen-dining.jpg",
+        url: "/residence-kitchen-dining.webp",
         caption: "Kitchen and dining suite with dark stone counters and warm joinery."
       }
     ]
@@ -53,7 +53,7 @@ export const projects = [
     isProposed: false,
     location: "Pathanamthitta, Kerala",
     siteArea: "Living Suite",
-    heroImage: "/residence-living-room.jpg",
+    heroImage: "/residence-living-room.webp",
     summary: "Timber fins, a stone-clad stair beyond and warm indirect ambient light.",
     description: "Designed for quiet elegance and spatial fluidity. Vertical teak timber fins form an acoustic and visual divider beside the media console, while a stone-clad staircase rises beyond. Concealed warm LED coves bathe the polished concrete floor in soft ambient luminescence.",
     details: [
@@ -69,7 +69,7 @@ export const projects = [
     ],
     gallery: [
       {
-        url: "/residence-living-room.jpg",
+        url: "/residence-living-room.webp",
         caption: "Living room with timber fins, stone stair beyond and warm indirect light."
       }
     ]
@@ -84,7 +84,7 @@ export const projects = [
     isProposed: false,
     location: "Pathanamthitta, Kerala",
     siteArea: "Formal Lounge",
-    heroImage: "/residence-lounge.jpg",
+    heroImage: "/residence-lounge.webp",
     summary: "Slatted panel, carved timber cabinet and a calm, low-tone palette.",
     description: "An intimate gathering space that balances heritage memory with contemporary minimalism. An intricately carved traditional teak cabinet provides a sculptural focal point, complemented by a floor-to-ceiling slatted timber accent panel and linen sectional upholstery.",
     details: [
@@ -99,7 +99,7 @@ export const projects = [
     ],
     gallery: [
       {
-        url: "/residence-lounge.jpg",
+        url: "/residence-lounge.webp",
         caption: "Lounge featuring slatted panel, carved timber cabinet and low palette."
       }
     ]
@@ -114,7 +114,7 @@ export const projects = [
     isProposed: false,
     location: "Pathanamthitta, Kerala",
     siteArea: "Culinary & Dining Suite",
-    heroImage: "/residence-kitchen-dining.jpg",
+    heroImage: "/residence-kitchen-dining.webp",
     summary: "Timber joinery, dark stone counters and an artisanal jali window.",
     description: "A functional culinary atelier centered on tactile warmth and ergonomic precision. Rich natural wood veneer cabinetry is capped with flamed dark granite countertops, illuminated by continuous under-cabinet warm task lights, with a low horizontal jali window opening to lush exterior greens.",
     details: [
@@ -129,7 +129,7 @@ export const projects = [
     ],
     gallery: [
       {
-        url: "/residence-kitchen-dining.jpg",
+        url: "/residence-kitchen-dining.webp",
         caption: "Kitchen and dining suite with timber joinery, dark stone counters and jali window."
       }
     ]
@@ -145,26 +145,26 @@ export const projects = [
     hasBeforeAfter: true,
     location: "Pathanamthitta, Kerala",
     siteArea: "Multi-Storey Residential Transformation",
-    heroImage: "/renovation-after.jpg",
+    heroImage: "/renovation-after.webp",
     summary: "A transformation project applying 'Care Before Design' — renewing what needs to change while retaining what works.",
     description: "A striking architectural transformation demonstrating Eshvara's philosophy: 'Care Before Design'. The existing structurally sound elements and primary structural grid are retained, while modern volumetric forms, dark marble portals, vertical louvers, glass balustrades, and warm illumination transform the residence into an editorial contemporary sanctuary.",
     beforeAfter: {
       existing: {
         title: "Existing House (Before)",
         desc: "The original multi-tier Kerala residence with temporary metal truss canopy, aged masonry facade, and exposed scaffolding.",
-        image: "/renovation-before.jpg",
+        image: "/renovation-before.webp",
         notes: "Structural retrofit retaining the solid framework while stripping tired external accretions."
       },
       proposed: {
         title: "Transformed Architecture (After)",
         desc: "Contemporary luxury residence featuring sculptural charcoal marble portal, vertical timber louvers, open glass balcony, integrated warm lighting, and car porch.",
-        image: "/renovation-after.jpg",
+        image: "/renovation-after.webp",
         notes: "Care Before Design philosophy: surgical transformation delivering modern tropical luxury while retaining sound existing foundations."
       },
       combined: {
         title: "Before & After Transformation",
         desc: "Direct visual comparison demonstrating how thoughtful architectural intervention turns an aged structure into an editorial masterpiece.",
-        image: "/renovation-before-after-combined.jpg",
+        image: "/renovation-before-after-combined.webp",
         notes: "Official Eshvara Design Architects transformation showcase."
       }
     },
@@ -182,15 +182,15 @@ export const projects = [
     ],
     gallery: [
       {
-        url: "/renovation-after.jpg",
+        url: "/renovation-after.webp",
         caption: "Completed contemporary transformation with integrated warm illumination and vertical louvers."
       },
       {
-        url: "/renovation-before.jpg",
+        url: "/renovation-before.webp",
         caption: "Original house prior to surgical architectural renovation."
       },
       {
-        url: "/renovation-before-after-combined.jpg",
+        url: "/renovation-before-after-combined.webp",
         caption: "Official Eshvara Design Architects Before & After transformation showcase."
       }
     ]
@@ -206,7 +206,7 @@ export const projects = [
     location: "Pathanamthitta, Kerala",
     siteArea: "Approx. 1.5 Acres",
     disclaimer: "The master plan is indicative. Final drawings are subject to survey and local authority approval.",
-    heroImage: "/projects/parachantha-villa-enclave.jpg",
+    heroImage: "/projects/parachantha-villa-enclave.webp",
     summary: "Proposed gated villa community structured along a central arterial avenue across 1.5 acres in Pathanamthitta.",
     description: "A thoughtful master-planned residential enclave envisioned for contemporary living in harmony with Kerala's topography. The project encompasses three organized residential zones along a central internal road, integrating community amenities with private villa enclaves.",
     details: [
@@ -221,7 +221,7 @@ export const projects = [
     ],
     gallery: [
       {
-        url: "/projects/parachantha-villa-enclave.jpg",
+        url: "/projects/parachantha-villa-enclave.webp",
         caption: "Master planned villa enclave perspective along central spine avenue."
       }
     ]

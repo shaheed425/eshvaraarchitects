@@ -104,7 +104,7 @@ export default function Lightbox({
               className="max-h-[75vh] max-w-full object-contain rounded-sm"
               onError={(e) => {
                 e.currentTarget.onerror = null;
-                e.currentTarget.src = '/residence-clean-crop.jpg';
+                e.currentTarget.src = '/residence-clean-crop.webp';
               }}
             />
           </motion.div>

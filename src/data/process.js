@@ -12,7 +12,7 @@ export const processData = {
         "Exploration of initial massing options and conceptual site relationships",
         "Preliminary feasibility check with local building bylaws and terrain constraints"
       ],
-      image: "/process/stage-01-concept.jpg"
+      image: "/process/stage-01-concept.webp"
     },
     {
       number: "02",
@@ -24,7 +24,7 @@ export const processData = {
         "Choreography of natural daylight, ventilation paths, and private courtyards",
         "Client design walkthroughs and material sample evaluations"
       ],
-      image: "/residence-clean-crop.jpg"
+      image: "/residence-clean-crop.webp"
     },
     {
       number: "03",
@@ -36,7 +36,7 @@ export const processData = {
         "Full MEP coordination: electrical layouts, plumbing conduits, and drainage schemes",
         "Material specifications, BOQ schedules, and fixed-cost contract finalization"
       ],
-      image: "/process/stage-03-documentation.jpg"
+      image: "/process/stage-03-documentation.webp"
     },
     {
       number: "04",
@@ -48,7 +48,7 @@ export const processData = {
         "Continuous on-site supervision of concrete pours, blockwork, and waterproofing",
         "Rigorous snag audits, final cleaning, and proud delivery of keys to the client"
       ],
-      image: "/hero-dusk-residence-clean.jpg"
+      image: "/hero-dusk-residence-clean.webp"
     }
   ],
   careBeforeDesign: {
@@ -84,7 +84,7 @@ export const processData = {
       title: "New Homes",
       shortDesc: "Complete residential architecture and interiors.",
       fullDesc: "From site study and first sketch through documentation, construction and handover. We handle every facet of your private villa build with single-point accountability.",
-      image: "/residence-clean-crop.jpg",
+      image: "/residence-clean-crop.webp",
       cta: "Explore New Homes"
     },
     {
@@ -92,7 +92,7 @@ export const processData = {
       title: "Renovation",
       shortDesc: "Study the existing house first, identify what works, and renew what needs to change.",
       fullDesc: "Specialized architectural remodeling that revitalizes dated structures into contemporary homes while respecting structural integrity and optimizing client budgets.",
-      image: "/five-ways-renovation.jpg",
+      image: "/five-ways-renovation.webp",
       cta: "Explore Renovation"
     },
     {
@@ -100,7 +100,7 @@ export const processData = {
       title: "Developments",
       shortDesc: "Master planning, permit drawings and villa design for residential developments.",
       fullDesc: "Comprehensive design for gated communities, layout zoning, clubhouse amenities, and infrastructural coordination for developers and family estates.",
-      image: "/five-ways-developments.jpg",
+      image: "/five-ways-developments.webp",
       cta: "Explore Developments"
     },
     {
@@ -108,7 +108,7 @@ export const processData = {
       title: "The Collection",
       shortDesc: "A selection of developed residential concepts adaptable to plot, orientation, requirements and budget.",
       fullDesc: "Proven, climatically refined home models tailored to Kerala plots. Accelerates project timelines and delivers absolute cost certainty without design compromise.",
-      image: "/concept-dusk-residence.jpg",
+      image: "/concept-dusk-residence.webp",
       cta: "Explore Collection"
     },
     {
@@ -116,7 +116,7 @@ export const processData = {
       title: "Made for One",
       shortDesc: "Fully bespoke architectural concepts developed around one client, one site and one set of requirements.",
       fullDesc: "Our flagship pure architectural commission. Singular residences shaped as bespoke works of art, engineered without compromise for discerning homeowners.",
-      image: "/hero-dusk-residence-clean.jpg",
+      image: "/hero-dusk-residence-clean.webp",
       cta: "Inquire Bespoke"
     }
   ],
@@ -126,42 +126,42 @@ export const processData = {
       title: "DRAWING",
       phase: "Concept & Blueprint",
       desc: "Every project originates on the drafting table: topographical surveys, structural mathematics, and aesthetic volumes.",
-      image: "/process/stage-01-concept.jpg"
+      image: "/process/stage-01-concept.webp"
     },
     {
       step: "02",
       title: "FOUNDATION",
       phase: "Substructure & Ground",
       desc: "Excavation via our own JCB fleet, deep structural footings, anti-termite treatment, and damp-proof courses.",
-      image: "/capabilities/earthwork-excavation.jpg"
+      image: "/capabilities/earthwork-excavation.webp"
     },
     {
       step: "03",
       title: "STRUCTURE",
       phase: "Reinforced Concrete Frame",
       desc: "Cast columns, beams, and cantilevered slabs mixed with precision batching equipment and inspected rebar grids.",
-      image: "/process/journey-03-structure.jpg"
+      image: "/process/journey-03-structure.webp"
     },
     {
       step: "04",
       title: "WALLS",
       phase: "Masonry & Enclosures",
       desc: "High-compressive in-house solid blocks, terracotta jalis, and acoustic cavity walls defining the spatial volumes.",
-      image: "/process/journey-04-walls.jpg"
+      image: "/process/journey-04-walls.webp"
     },
     {
       step: "05",
       title: "FINISHING",
       phase: "Craft, Joinery & Services",
       desc: "Custom teakwood door sets, laser-cut screens, smooth wall plastering, MEP cabling, and stone paving.",
-      image: "/process/journey-05-finishing.jpg"
+      image: "/process/journey-05-finishing.webp"
     },
     {
       step: "06",
       title: "COMPLETED",
       phase: "Living Sanctuary Handover",
       desc: "A timeless, climate-responsive architectural reality ready to enrich daily life for generations.",
-      image: "/hero-dusk-residence-clean.jpg"
+      image: "/hero-dusk-residence-clean.webp"
     }
   ]
 };

@@ -57,7 +57,7 @@ export default function Expertise() {
                       className="w-full h-full object-cover img-editorial-zoom filter grayscale-[10%] group-hover:grayscale-0 transition-all duration-700"
                       onError={(e) => {
                         e.currentTarget.onerror = null;
-                        e.currentTarget.src = '/concept-dusk-residence.jpg';
+                        e.currentTarget.src = '/concept-dusk-residence.webp';
                       }}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#292B26]/80 via-transparent to-transparent opacity-70" />

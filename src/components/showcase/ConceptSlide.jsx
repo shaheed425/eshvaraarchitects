@@ -22,7 +22,7 @@ export default function ConceptSlide({ concept }) {
           loading="eager"
           onError={(e) => {
             e.currentTarget.onerror = null;
-            e.currentTarget.src = concept.fullCardImage || '/concepts/the-cantilever.jpg';
+            e.currentTarget.src = concept.fullCardImage || '/concepts/the-cantilever.webp';
           }}
         />
 

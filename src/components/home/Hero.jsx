@@ -18,9 +18,9 @@ export default function Hero() {
           ========================================================================= */}
       <div className="absolute inset-0 z-0">
         <picture className="w-full h-full block">
-          <source media="(max-width: 1023px)" srcSet="/hero-twilight-mobile.jpg" />
+          <source media="(max-width: 1023px)" srcSet="/hero-twilight-mobile.webp" />
           <motion.img
-            src="/hero-twilight-nordic-villa.jpg"
+            src="/hero-twilight-nordic-villa.webp"
             alt="Modern Architectural Scandinavian Villa at Dusk"
             initial={{ scale: 1.04, opacity: 0.8 }}
             animate={{ scale: 1, opacity: 1 }}

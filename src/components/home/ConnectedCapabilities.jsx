@@ -138,7 +138,7 @@ export default function ConnectedCapabilities() {
                     className="w-full h-full object-cover"
                     onError={(e) => {
                       e.currentTarget.onerror = null;
-                      e.currentTarget.src = '/capabilities/welding-fabrication.jpg';
+                      e.currentTarget.src = '/capabilities/welding-fabrication.webp';
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#201E1C]/90 via-[#201E1C]/30 to-transparent" />

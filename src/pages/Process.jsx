@@ -84,7 +84,7 @@ export default function Process() {
                     className="w-full h-full object-cover filter grayscale-[10%]"
                     onError={(e) => {
                       e.currentTarget.onerror = null;
-                      e.currentTarget.src = '/process/stage-01-concept.jpg';
+                      e.currentTarget.src = '/process/stage-01-concept.webp';
                     }}
                   />
                 </div>
@@ -205,7 +205,7 @@ export default function Process() {
                 className="w-full h-full object-cover transition-all duration-700"
                 onError={(e) => {
                   e.currentTarget.onerror = null;
-                  e.currentTarget.src = '/hero-dusk-residence-clean.jpg';
+                  e.currentTarget.src = '/hero-dusk-residence-clean.webp';
                 }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#201E1C]/80 via-transparent to-transparent" />

@@ -93,7 +93,7 @@ export default function Gallery() {
                       className="w-full h-full object-cover img-editorial-zoom filter grayscale-[10%] group-hover:grayscale-0 transition-all duration-700"
                       onError={(e) => {
                         e.currentTarget.onerror = null;
-                        e.currentTarget.src = '/residence-clean-crop.jpg';
+                        e.currentTarget.src = '/residence-clean-crop.webp';
                       }}
                     />
 

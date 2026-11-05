@@ -17,7 +17,7 @@ export default function Projects() {
 
   // Lightbox items mapping from filteredProjects
   const lightboxItems = filteredProjects.map((p) => ({
-    image: p.heroImage || '/residence-clean-crop.jpg',
+    image: p.heroImage || '/residence-clean-crop.webp',
     title: p.title,
     category: p.category,
     location: p.location,
@@ -118,7 +118,7 @@ export default function Projects() {
                         className="w-full h-full object-cover img-editorial-zoom filter grayscale-[10%] group-hover:grayscale-0 transition-all duration-700"
                         onError={(e) => {
                           e.currentTarget.onerror = null;
-                          e.currentTarget.src = '/projects/parachantha-villa-enclave.jpg';
+                          e.currentTarget.src = '/projects/parachantha-villa-enclave.webp';
                         }}
                       />
 

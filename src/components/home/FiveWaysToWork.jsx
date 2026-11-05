@@ -43,7 +43,7 @@ export default function FiveWaysToWork() {
                     loading="lazy"
                     onError={(e) => {
                       e.currentTarget.onerror = null;
-                      e.currentTarget.src = '/hero-twilight-nordic-villa.jpg';
+                      e.currentTarget.src = '/hero-twilight-nordic-villa.webp';
                     }}
                   />
                   <div className="absolute top-3 left-3 px-2.5 py-0.5 rounded-[3px] bg-[#161514]/90 backdrop-blur-sm text-[11px] font-sans text-[#B49A62] font-bold tracking-widest uppercase border border-white/10">
