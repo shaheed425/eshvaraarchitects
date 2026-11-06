@@ -22,7 +22,7 @@ export default function Footer() {
             <div className="space-y-2 border-b border-white/10 pb-4">
               <div className="flex items-center gap-3">
                 <img
-                  src="/eshvara-logo.webp"
+                  src="/eshvara-logo.svg"
                   alt="Eshvara Design Architects Logo"
                   width="36"
                   height="36"
@@ -116,7 +116,7 @@ export default function Footer() {
             <div className="lg:col-span-7 space-y-3 sm:space-y-4">
               <div className="flex items-center gap-3">
                 <img
-                  src="/eshvara-logo.webp"
+                  src="/eshvara-logo.svg"
                   alt="Eshvara Design Architects Logo"
                   width="36"
                   height="36"

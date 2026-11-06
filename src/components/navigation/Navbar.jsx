@@ -64,7 +64,7 @@ export default function Navbar() {
               aria-label="Eshvara Design Architects Home"
             >
               <img
-                src="/eshvara-logo.webp"
+                src="/eshvara-logo.svg"
                 alt="Eshvara Design Architects Logo"
                 width="36"
                 height="36"
@@ -215,7 +215,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between border-b border-[#F4F0E8]/10 pb-5">
               <div className="flex items-center gap-2.5">
                 <img
-                  src="/eshvara-logo.webp"
+                  src="/eshvara-logo.svg"
                   alt="Eshvara Logo"
                   width="28"
                   height="28"
