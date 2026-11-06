@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 480" fill="none">
   <defs>
-    <linearGradient id="fullGold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F5CE85" />
-      <stop offset="25%" stop-color="#DE9F3E" />
-      <stop offset="50%" stop-color="#FCE5A6" />
-      <stop offset="75%" stop-color="#C58528" />
-      <stop offset="100%" stop-color="#ECAB4B" />
+    <linearGradient id="fullGold" x1="20%" y1="5%" x2="80%" y2="95%">
+      <stop offset="0%" stop-color="#F6B256" />
+      <stop offset="22%" stop-color="#E58B28" />
+      <stop offset="50%" stop-color="#D8771B" />
+      <stop offset="78%" stop-color="#BC5B10" />
+      <stop offset="100%" stop-color="#E99230" />
     </linearGradient>
     <style>
       .brand-title {
@@ -22,7 +22,7 @@
         font-weight: 600;
         letter-spacing: 0.44em;
         text-anchor: middle;
-        fill: #D9A450;
+        fill: #D8771B;
       }
     </style>
   </defs>

@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95 105" fill="none">
   <defs>
-    <linearGradient id="eshvaraGold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F2C879" />
-      <stop offset="25%" stop-color="#D99B3B" />
-      <stop offset="50%" stop-color="#FCE19B" />
-      <stop offset="75%" stop-color="#C28224" />
-      <stop offset="100%" stop-color="#EAA847" />
+    <linearGradient id="eshvaraGold" x1="20%" y1="5%" x2="80%" y2="95%">
+      <stop offset="0%" stop-color="#F6B256" />
+      <stop offset="22%" stop-color="#E58B28" />
+      <stop offset="50%" stop-color="#D8771B" />
+      <stop offset="78%" stop-color="#BC5B10" />
+      <stop offset="100%" stop-color="#E99230" />
     </linearGradient>
   </defs>
   <g fill="url(#eshvaraGold)">
