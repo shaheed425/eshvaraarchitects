@@ -19,13 +19,24 @@ export default function Footer() {
         <div className="block lg:hidden">
           <div className="bg-[#181716] border border-white/10 rounded-[12px] p-6 sm:p-8 space-y-5 shadow-2xl">
             {/* Brand Header */}
-            <div className="space-y-1.5 border-b border-white/10 pb-4">
-              <span className="font-editorial text-2xl tracking-[0.22em] text-[#F1EEE8] font-normal block leading-tight">
-                ESHVARA
-              </span>
-              <span className="font-sans text-[9px] uppercase tracking-[0.3em] text-[#B49A62] font-semibold block leading-tight">
-                DESIGN ARCHITECTS • KERALA
-              </span>
+            <div className="space-y-2 border-b border-white/10 pb-4">
+              <div className="flex items-center gap-3">
+                <img
+                  src="/eshvara-logo.webp"
+                  alt="Eshvara Design Architects Logo"
+                  width="36"
+                  height="36"
+                  className="w-8 h-8 sm:w-9 sm:h-9 object-contain shrink-0"
+                />
+                <div>
+                  <span className="font-editorial text-2xl tracking-[0.22em] text-[#F1EEE8] font-normal block leading-tight">
+                    ESHVARA
+                  </span>
+                  <span className="font-sans text-[9px] uppercase tracking-[0.3em] text-[#B49A62] font-semibold block leading-tight">
+                    DESIGN ARCHITECTS • KERALA
+                  </span>
+                </div>
+              </div>
               <p className="font-sans text-xs text-[#F1EEE8]/70 pt-1 font-light leading-relaxed">
                 "Designing Future, Brick by Brick." — Kulanada, Pathanamthitta
               </p>
@@ -103,9 +114,18 @@ export default function Footer() {
           {/* Top Header Row with Brand & Statement */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 pb-8 lg:pb-10 border-b border-[#F1EEE8]/10 items-center">
             <div className="lg:col-span-7 space-y-3 sm:space-y-4">
-              <span className="inline-block font-sans text-xs uppercase tracking-[0.3em] text-[#B49A62] font-semibold">
-                DESIGN. COORDINATE. BUILD.
-              </span>
+              <div className="flex items-center gap-3">
+                <img
+                  src="/eshvara-logo.webp"
+                  alt="Eshvara Design Architects Logo"
+                  width="36"
+                  height="36"
+                  className="w-9 h-9 object-contain shrink-0"
+                />
+                <span className="inline-block font-sans text-xs uppercase tracking-[0.3em] text-[#B49A62] font-semibold">
+                  ESHVARA DESIGN ARCHITECTS • DESIGN. COORDINATE. BUILD.
+                </span>
+              </div>
               <h2 className="font-editorial text-3xl sm:text-4xl lg:text-[2.75rem] text-[#F1EEE8] font-light leading-[1.12]">
                 Designing Future, <span className="italic text-[#B49A62]">Brick by Brick.</span>
               </h2>

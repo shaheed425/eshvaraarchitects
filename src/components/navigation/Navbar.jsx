@@ -60,21 +60,30 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link
               to="/"
-              className="group flex flex-col focus:outline-none"
+              className="group flex items-center gap-2.5 sm:gap-3.5 focus:outline-none"
               aria-label="Eshvara Design Architects Home"
             >
-              <span
-                className={`font-editorial text-2xl sm:text-3xl tracking-[0.22em] font-normal uppercase transition-colors leading-none ${
-                  isDarkNav
-                    ? 'text-[#F4F0E8] group-hover:text-[#B49A62]'
-                    : 'text-[#201E1C] group-hover:text-[#B49A62]'
-                }`}
-              >
-                ESHVARA
-              </span>
-              <span className="font-sans text-[8.5px] sm:text-[9.5px] tracking-[0.34em] uppercase font-semibold text-[#B49A62] mt-1.5 leading-none">
-                DESIGN ARCHITECTS
-              </span>
+              <img
+                src="/eshvara-logo.webp"
+                alt="Eshvara Design Architects Logo"
+                width="36"
+                height="36"
+                className="w-8 h-8 sm:w-9 sm:h-9 lg:w-10 lg:h-10 object-contain shrink-0 transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="flex flex-col">
+                <span
+                  className={`font-editorial text-2xl sm:text-3xl tracking-[0.22em] font-normal uppercase transition-colors leading-none ${
+                    isDarkNav
+                      ? 'text-[#F4F0E8] group-hover:text-[#B49A62]'
+                      : 'text-[#201E1C] group-hover:text-[#B49A62]'
+                  }`}
+                >
+                  ESHVARA
+                </span>
+                <span className="font-sans text-[8.5px] sm:text-[9.5px] tracking-[0.34em] uppercase font-semibold text-[#B49A62] mt-1.5 leading-none">
+                  DESIGN ARCHITECTS
+                </span>
+              </div>
             </Link>
 
             {/* Subtle vertical separator next to logo matching screenshot */}
@@ -204,9 +213,23 @@ export default function Navbar() {
             className="fixed inset-0 z-50 bg-[#161513] text-[#F4F0E8] flex flex-col justify-between pt-24 pb-10 px-8 sm:px-12 lg:hidden overflow-y-auto"
           >
             <div className="flex items-center justify-between border-b border-[#F4F0E8]/10 pb-5">
-              <span className="font-sans text-[10px] uppercase tracking-[0.3em] text-[#B49A62] font-semibold">
-                DESIGN. COORDINATE. BUILD.
-              </span>
+              <div className="flex items-center gap-2.5">
+                <img
+                  src="/eshvara-logo.webp"
+                  alt="Eshvara Logo"
+                  width="28"
+                  height="28"
+                  className="w-7 h-7 object-contain shrink-0"
+                />
+                <div className="flex flex-col">
+                  <span className="font-editorial text-base tracking-[0.2em] text-[#F4F0E8] leading-none">
+                    ESHVARA
+                  </span>
+                  <span className="font-sans text-[7.5px] uppercase tracking-[0.28em] text-[#B49A62] font-semibold mt-0.5 leading-none">
+                    DESIGN ARCHITECTS
+                  </span>
+                </div>
+              </div>
               <button
                 onClick={() => setMobileMenuOpen(false)}
                 className="p-2 text-[#F4F0E8] hover:text-[#B49A62]"
