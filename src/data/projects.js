@@ -27,7 +27,7 @@ export const projects = [
     gallery: [
       {
         url: "/hero-contemporary-residence.webp",
-        caption: "Front elevation featuring stone plinth, timber louvers and glass balcony."
+        caption: "Front elevation featuring terracotta tiled roof, cantilevered balcony and warm landscape lighting."
       },
       {
         url: "/residence-living-room.webp",

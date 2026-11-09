@@ -105,14 +105,30 @@ export default function ConnectedCapabilities() {
                     <motion.div
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: 1, height: 'auto' }}
-                      className="mt-3 pl-10 sm:pl-12 pt-2 border-t border-[#B49A62]/20"
+                      className="mt-3 pl-10 sm:pl-12 pt-2 border-t border-[#B49A62]/20 space-y-3"
                     >
-                      <span className="font-sans text-[11px] text-[#B49A62] font-semibold uppercase tracking-wider block">
-                        Execution Standard:
-                      </span>
-                      <p className="font-sans text-xs text-[#77766F] font-light">
-                        {item.details}
-                      </p>
+                      {/* Mobile Inline Image Preview */}
+                      <div className="lg:hidden relative aspect-[16/10] w-full rounded-[4px] overflow-hidden shadow-md mt-2 border border-[#201E1C]/10">
+                        <img
+                          src={item.image}
+                          alt={item.title}
+                          className="w-full h-full object-cover"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+                        <div className="absolute bottom-2.5 left-3 text-white text-[11px] font-sans font-medium tracking-wide">
+                          {item.title} • In-House Facility
+                        </div>
+                      </div>
+
+                      <div>
+                        <span className="font-sans text-[11px] text-[#B49A62] font-semibold uppercase tracking-wider block">
+                          Execution Standard:
+                        </span>
+                        <p className="font-sans text-xs text-[#77766F] font-light">
+                          {item.details}
+                        </p>
+                      </div>
                     </motion.div>
                   )}
                 </div>

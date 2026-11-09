@@ -13,7 +13,7 @@ export const capabilities = {
           title: "Carpentry",
           desc: "Custom architectural carpentry and joinery works. From solid teakwood door leaves and pivot frames to bespoke ceiling battens and custom cabinetry.",
           details: "Precision joinery, hand-finished timbers, moisture-treated wood selection, and seamless architectural integrations.",
-          image: "/residence-clean-crop.webp"
+          image: "/capabilities/carpentry-joinery.webp"
         },
         {
           id: "welding",
@@ -29,7 +29,7 @@ export const capabilities = {
           title: "Hollow & Solid Blocks",
           desc: "In-house block manufacturing supporting rigorous construction requirements, ensuring high compressive strength and consistent batch curing.",
           details: "Strict aggregate grading, hydraulic compression, controlled water curing, and certified load-bearing block production.",
-          image: "/hero-dusk-residence-clean.webp"
+          image: "/capabilities/hollow-solid-blocks.webp"
         },
         {
           id: "interlock",
@@ -37,7 +37,7 @@ export const capabilities = {
           title: "Interlock",
           desc: "Heavy-duty interlocking paving and related ground works. Paved driveways, entrance plazas, permeable drainage pavers, and landscape walkways.",
           details: "Dual-layer vibrated pavers, slip-resistant finishes, color-consistent wear layers, and sub-base compaction oversight.",
-          image: "/concept-dusk-residence.webp"
+          image: "/capabilities/interlock-paving.webp"
         }
       ]
     },
@@ -60,7 +60,7 @@ export const capabilities = {
           title: "Material Movement",
           desc: "Tippers and heavy transport vehicles ensuring uninterrupted flow of sand, gravel, blocks, and construction aggregate to job sites.",
           details: "Direct supply line from regional quarries, high-capacity haulage, and zero site stagnation during monsoon seasons.",
-          image: "/concept-dusk-residence.webp"
+          image: "/capabilities/material-transport-tipper.webp"
         },
         {
           id: "site-logistics",
@@ -68,7 +68,7 @@ export const capabilities = {
           title: "Site Logistics",
           desc: "Tempo and smaller utility vehicles engineered for nimble navigation through tight residential lanes and remote rural sites in Kerala.",
           details: "Daily tool transport, precision hardware delivery, on-demand site support, and agile material shifts.",
-          image: "/residence-clean-crop.webp"
+          image: "/capabilities/site-utility-logistics.webp"
         },
         {
           id: "concrete-works",
@@ -76,7 +76,7 @@ export const capabilities = {
           title: "Concrete Works & Mixers",
           desc: "Direct batching plant mixers, vibrators, and column shuttering equipment guaranteeing monolithic concrete pours and structural integrity.",
           details: "Consistent water-cement ratios, mechanized slab vibration, calibrated curing regimes, and zero structural cold joints.",
-          image: "/hero-dusk-residence-clean.webp"
+          image: "/capabilities/concrete-mixer-works.webp"
         }
       ]
     }

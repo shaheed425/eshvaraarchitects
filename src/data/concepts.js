@@ -45,13 +45,13 @@ export const architecturalConcepts = [
     title: "The Ribbon",
     category: "Continuous Ribbon Architecture",
     image: "/concepts/the-ribbon.webp",
-    description: "Two white bands wrapping the upper floors, with stone and timber at the entrance.",
+    description: "Sculptural geometric planes wrapping the upper levels, paired with expansive glazing and warm timber soffits.",
     madeForLabel: "Made for",
-    madeForDescription: "Someone who values calm, flowing form over loud gestures.",
+    madeForDescription: "Someone who values bold, sculptural architectural form and seamless indoor-outdoor living.",
     specs: [
-      { label: "Typology", value: "Fluid Horizontal Ribbon" },
-      { label: "Materiality", value: "Sculptural Bands & Teak Joinery" },
-      { label: "Threshold", value: "Stone Clad Uplit Court" }
+      { label: "Typology", value: "Sculptural Faceted Pavilion" },
+      { label: "Materiality", value: "Geometric Concrete & Teak Louvers" },
+      { label: "Portico", value: "Cantilevered Uplit Car Court" }
     ],
     footerTagline: "Made for one.",
     footerSignature: "@eshvaradesignarchitects"
