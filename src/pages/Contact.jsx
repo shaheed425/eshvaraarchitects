@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Phone, Mail, MapPin, MessageSquare, ArrowUpRight, CheckCircle2, Instagram } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageSquare, ArrowUpRight, CheckCircle2, Instagram, Navigation } from 'lucide-react';
 import PageTransition from '../components/common/PageTransition';
 import { brandInfo } from '../data/brand';
 
@@ -281,7 +281,7 @@ Looking forward to your guidance.`;
                     </a>
                   </div>
 
-                  <div>
+                  <div className="border-b border-[#201E1C]/10 pb-4">
                     <h3 className="font-editorial text-2xl text-[#201E1C]">
                       {brandInfo.contacts.managingDirector.name}
                     </h3>
@@ -294,6 +294,22 @@ Looking forward to your guidance.`;
                     >
                       <Phone className="w-3.5 h-3.5 text-[#B49A62]" />
                       <span>{brandInfo.contacts.managingDirector.phone}</span>
+                    </a>
+                  </div>
+
+                  <div>
+                    <h3 className="font-editorial text-2xl text-[#201E1C]">
+                      {brandInfo.contacts.studioLine.name}
+                    </h3>
+                    <p className="font-sans text-xs text-[#77766F] font-semibold uppercase tracking-wider">
+                      {brandInfo.contacts.studioLine.title}
+                    </p>
+                    <a
+                      href={`tel:${brandInfo.contacts.studioLine.phoneRaw}`}
+                      className="inline-flex items-center gap-2 text-sm text-[#201E1C] font-semibold hover:text-[#B49A62] transition-colors mt-2"
+                    >
+                      <Phone className="w-3.5 h-3.5 text-[#B49A62]" />
+                      <span>{brandInfo.contacts.studioLine.phone}</span>
                     </a>
                   </div>
 
@@ -321,26 +337,57 @@ Looking forward to your guidance.`;
                 </div>
               </div>
 
-              {/* Studio Address Card */}
-              <div className="p-8 bg-[#D9D0C1]/40 border border-[#201E1C]/10 space-y-3">
-                <div className="flex items-center gap-2 text-[#B49A62]">
-                  <MapPin className="w-4 h-4" />
-                  <h3 className="font-editorial text-2xl text-[#201E1C]">Studio Location</h3>
+              {/* Studio Address & Interactive Google Maps Card */}
+              <div className="p-6 sm:p-8 bg-[#D9D0C1]/40 border border-[#201E1C]/10 space-y-4">
+                <div className="flex items-center justify-between gap-2">
+                  <div className="flex items-center gap-2 text-[#B49A62]">
+                    <MapPin className="w-4 h-4" />
+                    <h3 className="font-editorial text-2xl text-[#201E1C]">Studio Location</h3>
+                  </div>
+                  <span className="font-mono text-[10px] text-[#77766F] uppercase tracking-wider bg-[#201E1C]/5 px-2 py-0.5 rounded">
+                    {brandInfo.coordinates}
+                  </span>
                 </div>
-                <address className="not-italic font-sans text-xs text-[#77766F] leading-relaxed space-y-1">
-                  <p className="font-semibold text-[#201E1C]">Eshvara Design Architects</p>
-                  <p>Kulanada, Pathanamthitta District,</p>
-                  <p>Kerala, India — 689503.</p>
+
+                <address className="not-italic font-sans text-xs text-[#77766F] leading-relaxed space-y-0.5">
+                  <p className="font-semibold text-[#201E1C] text-sm">{brandInfo.name}</p>
+                  <p className="text-[#201E1C]/80">{brandInfo.contacts.address.full}</p>
                 </address>
 
-                <div className="pt-2">
+                {/* Interactive Google Map Embed */}
+                <div className="relative w-full h-56 sm:h-64 rounded-[4px] overflow-hidden border border-[#201E1C]/15 bg-[#201E1C]/5 shadow-inner">
+                  <iframe
+                    title="Eshvara Design Architects Studio Location — Kulanada, Pathanamthitta"
+                    src={brandInfo.contacts.address.embedUrl}
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    className="w-full h-full grayscale-[10%] contrast-[1.02] hover:grayscale-0 transition-all duration-300"
+                  />
+                </div>
+
+                {/* Directions and Google Maps Links */}
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5 pt-1">
                   <a
-                    href="https://maps.google.com/?q=Kulanada+Pathanamthitta+Kerala"
+                    href={brandInfo.contacts.address.directionsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs text-[#201E1C] hover:text-[#B49A62] font-sans font-medium"
+                    className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-[4px] bg-[#201E1C] text-[#F1EEE8] font-sans text-xs uppercase tracking-[0.15em] font-semibold hover:bg-[#B49A62] hover:text-[#201E1C] transition-colors"
                   >
-                    <span>View on Google Maps</span>
+                    <Navigation className="w-3.5 h-3.5 text-[#B49A62]" />
+                    <span>Get Directions</span>
+                  </a>
+
+                  <a
+                    href={brandInfo.contacts.address.mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-1.5 px-3 py-2 text-xs text-[#201E1C] hover:text-[#B49A62] font-sans font-medium transition-colors"
+                  >
+                    <span>Open in Google Maps</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </a>
                 </div>

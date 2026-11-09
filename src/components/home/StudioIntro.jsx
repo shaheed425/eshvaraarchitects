@@ -66,18 +66,18 @@ export default function StudioIntro() {
               viewport={{ once: true }}
               transition={{ duration: 0.9, delay: 0.2 }}
               animate={{ y: [-3, 4, -3] }}
-              className="hidden sm:block absolute -bottom-8 -right-4 sm:right-2 z-20 w-[52%] aspect-square overflow-hidden shadow-2xl border-4 border-[#F1EEE8] bg-[#201E1C] group"
+              className="absolute -bottom-6 -right-2 xs:-bottom-8 xs:right-0 sm:right-2 z-20 w-[54%] xs:w-[52%] sm:w-[50%] aspect-[4/3] sm:aspect-square overflow-hidden shadow-2xl border-4 border-[#F1EEE8] bg-[#201E1C] group"
             >
               <img
-                src="/concept-dusk-residence.webp"
-                alt="Construction Execution & Craftsmanship"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-108"
+                src="/studio-sculptural-villa.webp"
+                alt="Sculptural Modern Architectural Villa & Construction Execution"
+                className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-108"
                 onError={(e) => {
                   e.currentTarget.onerror = null;
-                  e.currentTarget.src = '/concept-night-sanctuary.jpg';
+                  e.currentTarget.src = '/concept-dusk-residence.webp';
                 }}
               />
-              <div className="absolute inset-0 bg-[#201E1C]/20 group-hover:bg-transparent transition-colors duration-500" />
+              <div className="absolute inset-0 bg-[#201E1C]/15 group-hover:bg-transparent transition-colors duration-500" />
             </motion.div>
 
             {/* Subtle background monogram */}

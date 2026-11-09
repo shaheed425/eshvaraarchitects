@@ -23,23 +23,39 @@ export const brandInfo = {
   contacts: {
     principalArchitect: {
       name: "Sreejith Chandran",
-      title: "Principal Architect",
-      phone: "+91 88487 58571",
+      title: "Creative Head | Architect",
+      phone: "+91 8848 758 571",
       phoneRaw: "+918848758571"
     },
     managingDirector: {
       name: "K. Sreeramachandran",
       title: "Managing Director | Building Contractor",
-      phone: "+91 94951 12231",
-      phoneRaw: "+919495112231"
+      phone: "+91 94951 12234",
+      phoneRaw: "+919495112234"
     },
-    email: "ksreeramachandran2068@gmail.com",
+    studioLine: {
+      name: "Studio Line",
+      title: "Client Coordination",
+      phone: "+91 90481 00560",
+      phoneRaw: "+919048100560"
+    },
+    allPhones: [
+      { label: "Sreejith Chandran", phone: "+91 8848 758 571", raw: "+918848758571" },
+      { label: "K. Sreeramachandran", phone: "+91 94951 12234", raw: "+919495112234" },
+      { label: "Studio Desk", phone: "+91 90481 00560", raw: "+919048100560" }
+    ],
+    email: "ksreejithchandran2068@gmail.com",
     address: {
-      studio: "Eshvara Studio",
+      studio: "Eshvara Design Architects",
       town: "Kulanada",
       district: "Pathanamthitta",
       state: "Kerala",
-      full: "Eshvara Design Architects, Kulanada, Pathanamthitta, Kerala"
+      pincode: "689503",
+      full: "Kulanada, Pathanamthitta Dt-kerala, 689503",
+      mapsQuery: "Kulanada, Pathanamthitta, Kerala 689503",
+      mapsUrl: "https://www.google.com/maps/search/?api=1&query=Kulanada,+Pathanamthitta,+Kerala+689503",
+      directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Kulanada,+Pathanamthitta,+Kerala+689503",
+      embedUrl: "https://maps.google.com/maps?q=Kulanada%2C%20Pathanamthitta%2C%20Kerala%20689503&t=&z=14&ie=UTF8&iwloc=&output=embed"
     },
     instagram: {
       handle: "@eshvaradesignarchitects",

@@ -6,7 +6,6 @@ import { AnimatePresence } from 'framer-motion';
 import Navbar from './components/navigation/Navbar';
 import Footer from './components/footer/Footer';
 import ScrollToTop from './components/common/ScrollToTop';
-import ScrollProgress from './components/common/ScrollProgress';
 import FloatingWhatsApp from './components/common/FloatingWhatsApp';
 
 // Pages
@@ -49,7 +48,6 @@ export default function App() {
     <BrowserRouter>
       <div className="relative min-h-screen bg-[#F1EEE8] text-[#201E1C] flex flex-col font-sans selection:bg-[#B49A62] selection:text-white pb-16 lg:pb-0">
         <ScrollToTop />
-        <ScrollProgress />
         <FloatingWhatsApp />
         <Navbar />
         <div className="flex-1">

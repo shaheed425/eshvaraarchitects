@@ -15,7 +15,7 @@ export default function FinalCTA() {
           className="w-full h-full object-cover filter brightness-[0.28] contrast-[1.1]"
           onError={(e) => {
             e.currentTarget.onerror = null;
-            e.currentTarget.src = '/concept-night-sanctuary.jpg';
+            e.currentTarget.src = '/hero-modern-luxury-villa.webp';
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#201E1C] via-[#201E1C]/80 to-[#201E1C]/65" />

@@ -47,7 +47,7 @@ export default function FiveWaysToWork() {
                     }}
                   />
                   <div className="absolute top-3 left-3 px-2.5 py-0.5 rounded-[3px] bg-[#161514]/90 backdrop-blur-sm text-[11px] font-sans text-[#B49A62] font-bold tracking-widest uppercase border border-white/10">
-                    0{way.number}
+                    {way.number}
                   </div>
                 </div>
 
@@ -56,10 +56,10 @@ export default function FiveWaysToWork() {
                   <div>
                     <div className="flex items-center justify-between border-b border-[#F1EEE8]/10 pb-3 mb-3">
                       <span className="font-sans text-xs uppercase tracking-[0.25em] text-[#B49A62] font-bold">
-                        Offering 0{way.number}
+                        Offering {way.number}
                       </span>
                       <span className="font-sans text-xs text-[#F1EEE8]/50 uppercase tracking-wider">
-                        Pathway 0{way.number} / 05
+                        Pathway {way.number} / 05
                       </span>
                     </div>
 

@@ -51,11 +51,11 @@ export default function Navbar() {
           scrolled
             ? 'bg-[#FAF8F5]/96 backdrop-blur-md pt-[calc(17px+env(safe-area-inset-top,0px))] pb-3 sm:py-3.5 border-b border-[#201E1C]/10 shadow-[0_4px_30px_rgba(0,0,0,0.06)] text-[#201E1C] translate-y-0 opacity-100'
             : isDarkNav
-            ? 'bg-gradient-to-b from-[#111318]/85 via-[#111318]/40 to-transparent pt-[calc(17px+env(safe-area-inset-top,0px))] pb-3.5 sm:py-6 text-white translate-y-0 opacity-100'
+            ? 'bg-gradient-to-b from-[#07111c]/90 via-[#07111c]/40 to-transparent pt-[calc(17px+env(safe-area-inset-top,0px))] pb-3.5 sm:py-6 text-white translate-y-0 opacity-100'
             : 'bg-[#FAF8F5]/96 backdrop-blur-md pt-[calc(17px+env(safe-area-inset-top,0px))] pb-3.5 sm:py-4 border-b border-[#201E1C]/10 text-[#201E1C] translate-y-0 opacity-100'
         }`}
       >
-        <div className="w-full max-w-[1400px] mx-auto px-4 xs:px-5 sm:px-8 lg:px-14 flex items-center justify-between">
+        <div className="w-full max-w-[1400px] mx-auto px-6 sm:px-8 lg:px-14 flex items-center justify-between">
           {/* Logo with vertical divider line matching screenshot */}
           <div className="flex items-center">
             <Link
@@ -127,6 +127,19 @@ export default function Navbar() {
 
           {/* Top CTA (Desktop only) & Hamburger */}
           <div className="flex items-center gap-3 sm:gap-4">
+            <a
+              href={`tel:${brandInfo.contacts.principalArchitect.phoneRaw}`}
+              className={`hidden xl:inline-flex items-center gap-2 font-sans text-xs font-semibold tracking-wider transition-colors duration-300 py-2 px-3.5 rounded-[4px] border ${
+                isDarkNav
+                  ? 'border-white/20 text-[#F4F0E8] hover:text-[#D4A373] hover:border-[#D4A373] bg-[#111318]/40'
+                  : 'border-[#201E1C]/20 text-[#201E1C] hover:text-[#B49A62] hover:border-[#B49A62] bg-[#FAF8F5]/60'
+              }`}
+              aria-label={`Call direct: ${brandInfo.contacts.principalArchitect.phone}`}
+            >
+              <Phone className="w-3.5 h-3.5 text-[#D4A373]" />
+              <span>{brandInfo.contacts.principalArchitect.phone}</span>
+            </a>
+
             <Link
               to="/contact"
               className="hidden lg:inline-flex items-center gap-2 px-5 sm:px-6 py-2.5 rounded-[4px] bg-[#B49A62] text-[#161513] font-sans text-xs uppercase tracking-[0.18em] font-bold hover:bg-[#F4F0E8] hover:text-[#161513] transition-all duration-300 shadow-md active:scale-95"
@@ -156,12 +169,12 @@ export default function Navbar() {
       </header>
 
       {/* =========================================================================
-          IPHONE-STYLE FLOATING BOTTOM CONTROL BAR (Mobile Viewport Only)
+          IPHONE-STYLE FLOATING BOTTOM CONTROL BAR (Mobile Viewport Only - Appears on Scroll)
           ========================================================================= */}
-      {!mobileMenuOpen && (
+      {scrolled && !mobileMenuOpen && (
         <nav
           aria-label="Mobile Bottom Control Dock"
-          className="fixed bottom-[calc(0.75rem+env(safe-area-inset-bottom,0px))] inset-x-3 sm:inset-x-6 z-50 lg:hidden pointer-events-none"
+          className="fixed bottom-[calc(0.75rem+env(safe-area-inset-bottom,0px))] inset-x-3 sm:inset-x-6 z-50 lg:hidden pointer-events-none transition-all duration-300"
           style={{ bottom: 'calc(0.75rem + env(safe-area-inset-bottom, 0px))' }}
         >
           <div className="max-w-md mx-auto bg-[#161513]/95 backdrop-blur-2xl border border-[#3A3022] rounded-[28px] px-2.5 xs:px-3 sm:px-4 py-2 shadow-[0_14px_45px_rgba(0,0,0,0.85)] flex items-center justify-between pointer-events-auto gap-1 xs:gap-1.5 sm:gap-2">
@@ -273,20 +286,29 @@ export default function Navbar() {
                 <ArrowUpRight className="w-4 h-4" />
               </Link>
 
-              <div className="flex flex-col gap-2 text-xs text-[#C5C0B8] pt-2 font-sans">
+              <div className="flex flex-col gap-2.5 text-xs text-[#C5C0B8] pt-2 font-sans">
+                <span className="text-[10px] uppercase tracking-wider text-[#B49A62] font-semibold">
+                  Direct Phone Contacts:
+                </span>
+                {brandInfo.contacts.allPhones.map((p) => (
+                  <a
+                    key={p.raw}
+                    href={`tel:${p.raw}`}
+                    className="flex items-center justify-between py-1.5 px-3 rounded bg-white/5 hover:bg-[#B49A62]/15 hover:text-[#B49A62] transition-colors"
+                  >
+                    <span className="flex items-center gap-2">
+                      <Phone className="w-3.5 h-3.5 text-[#B49A62]" />
+                      <span className="font-medium text-white">{p.phone}</span>
+                    </span>
+                    <span className="text-[10px] text-neutral-400">{p.label}</span>
+                  </a>
+                ))}
                 <a
-                  href={`tel:${brandInfo.contacts?.principalArchitect?.phoneRaw || '+918848758571'}`}
-                  className="flex items-center gap-2 hover:text-[#B49A62]"
-                >
-                  <Phone className="w-3.5 h-3.5 text-[#B49A62]" />
-                  <span>{brandInfo.contacts?.principalArchitect?.phone || '+91 88487 58571'}</span>
-                </a>
-                <a
-                  href={`mailto:${brandInfo.contacts?.email || 'hello@eshvara.design'}`}
-                  className="flex items-center gap-2 hover:text-[#B49A62]"
+                  href={`mailto:${brandInfo.contacts?.email || 'ksreejithchandran2068@gmail.com'}`}
+                  className="flex items-center gap-2 hover:text-[#B49A62] pt-1"
                 >
                   <Mail className="w-3.5 h-3.5 text-[#B49A62]" />
-                  <span>{brandInfo.contacts?.email || 'hello@eshvara.design'}</span>
+                  <span>{brandInfo.contacts?.email || 'ksreejithchandran2068@gmail.com'}</span>
                 </a>
               </div>
             </div>

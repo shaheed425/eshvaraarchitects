@@ -61,20 +61,20 @@ export default function About() {
             </div>
 
             <div className="lg:col-span-6 relative">
-              <div className="relative aspect-[4/5] overflow-hidden bg-[#201E1C] shadow-2xl">
+              <div className="relative aspect-[4/5] overflow-hidden bg-[#201E1C] shadow-2xl group">
                 <img
-                  src="/residence-clean-crop.webp"
-                  alt="Eshvara Design Architects Studio"
-                  className="w-full h-full object-cover filter grayscale-[10%]"
+                  src="/eshvara-studio-atelier.webp"
+                  alt="Eshvara Design Architects Studio Atelier in Kulanada, Kerala"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   onError={(e) => {
                     e.currentTarget.onerror = null;
-                    e.currentTarget.src = '/hero-dusk-residence-clean.webp';
+                    e.currentTarget.src = '/studio-atelier-interior.webp';
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#201E1C]/80 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#201E1C]/85 via-[#201E1C]/20 to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6 text-[#F1EEE8]">
                   <span className="font-sans text-[10px] uppercase tracking-[0.25em] text-[#B49A62] font-semibold block mb-1">
-                    Studio Location
+                    Studio Location • Atelier
                   </span>
                   <p className="font-editorial text-2xl font-light">
                     Kulanada, Pathanamthitta, Kerala

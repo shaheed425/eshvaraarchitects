@@ -44,24 +44,40 @@ export default function Footer() {
 
             {/* Direct Contact Information */}
             <div className="space-y-2.5 font-sans text-xs text-[#F1EEE8]/85">
+              <div className="space-y-1.5">
+                <span className="block text-[10px] uppercase tracking-wider text-[#B49A62] font-semibold">
+                  Direct Phone Contacts:
+                </span>
+                {brandInfo.contacts.allPhones.map((p) => (
+                  <a
+                    key={p.raw}
+                    href={`tel:${p.raw}`}
+                    className="flex items-center justify-between hover:text-[#B49A62] transition-colors py-0.5"
+                  >
+                    <span className="flex items-center gap-2">
+                      <Phone className="w-3.5 h-3.5 text-[#B49A62] flex-shrink-0" />
+                      <span className="font-medium text-white">{p.phone}</span>
+                    </span>
+                    <span className="text-[10px] text-neutral-400">{p.label}</span>
+                  </a>
+                ))}
+              </div>
               <a
-                href={`tel:${brandInfo.contacts?.principalArchitect?.phoneRaw || '+918848758571'}`}
-                className="flex items-center gap-2.5 hover:text-[#B49A62] transition-colors"
-              >
-                <Phone className="w-4 h-4 text-[#B49A62] flex-shrink-0" />
-                <span>{brandInfo.contacts?.principalArchitect?.phone || '+91 88487 58571'}</span>
-              </a>
-              <a
-                href={`mailto:${brandInfo.contacts?.email || 'hello@eshvara.design'}`}
-                className="flex items-center gap-2.5 hover:text-[#B49A62] transition-colors"
+                href={`mailto:${brandInfo.contacts?.email || 'ksreejithchandran2068@gmail.com'}`}
+                className="flex items-center gap-2.5 hover:text-[#B49A62] transition-colors pt-1"
               >
                 <Mail className="w-4 h-4 text-[#B49A62] flex-shrink-0" />
-                <span>{brandInfo.contacts?.email || 'hello@eshvara.design'}</span>
+                <span>{brandInfo.contacts?.email || 'ksreejithchandran2068@gmail.com'}</span>
               </a>
-              <div className="flex items-start gap-2.5 text-[#F1EEE8]/65 pt-0.5">
-                <MapPin className="w-4 h-4 text-[#B49A62] flex-shrink-0 mt-0.5" />
-                <span>Eshvara Studio, Kulanada, Pathanamthitta, Kerala</span>
-              </div>
+              <a
+                href={brandInfo.contacts.address.directionsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-2.5 text-[#F1EEE8]/75 hover:text-[#B49A62] transition-colors pt-0.5 group"
+              >
+                <MapPin className="w-4 h-4 text-[#B49A62] flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                <span>{brandInfo.contacts.address.full}</span>
+              </a>
             </div>
 
             {/* Quick Links */}
@@ -193,10 +209,20 @@ export default function Footer() {
                 </p>
               </div>
               <address className="not-italic font-sans text-xs text-[#F1EEE8]/70 leading-relaxed space-y-1">
-                <p className="text-white font-medium">Eshvara Design Architects</p>
-                <p>Kulanada, Pathanamthitta District</p>
-                <p>Kerala, India — 689503</p>
+                <p className="text-white font-medium">{brandInfo.name}</p>
+                <p>{brandInfo.contacts.address.full}</p>
               </address>
+              <div className="pt-1">
+                <a
+                  href={brandInfo.contacts.address.directionsUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs text-[#B49A62] hover:text-[#F1EEE8] font-sans font-medium transition-colors"
+                >
+                  <span>Open in Google Maps / Directions</span>
+                  <ArrowUpRight className="w-3.5 h-3.5" />
+                </a>
+              </div>
               <p className="text-[11px] text-[#F1EEE8]/50 font-light pt-0.5">
                 "Our own studio was designed and built by the team, starting from an empty room."
               </p>
@@ -210,7 +236,7 @@ export default function Footer() {
               <div className="space-y-2.5 font-sans text-xs text-[#F1EEE8]/80">
                 <div>
                   <span className="block text-[10px] uppercase tracking-wider text-[#B49A62]">
-                    Principal Architect: Sreejith Chandran
+                    Creative Head | Architect: Sreejith Chandran
                   </span>
                   <a
                     href={`tel:${brandInfo.contacts.principalArchitect.phoneRaw}`}
@@ -231,6 +257,19 @@ export default function Footer() {
                   >
                     <Phone className="w-3.5 h-3.5 text-[#B49A62]" />
                     <span>{brandInfo.contacts.managingDirector.phone}</span>
+                  </a>
+                </div>
+
+                <div>
+                  <span className="block text-[10px] uppercase tracking-wider text-[#B49A62]">
+                    Studio Coordination Line
+                  </span>
+                  <a
+                    href={`tel:${brandInfo.contacts.studioLine.phoneRaw}`}
+                    className="flex items-center gap-2 hover:text-[#B49A62] transition-colors font-medium text-xs mt-0.5"
+                  >
+                    <Phone className="w-3.5 h-3.5 text-[#B49A62]" />
+                    <span>{brandInfo.contacts.studioLine.phone}</span>
                   </a>
                 </div>
 

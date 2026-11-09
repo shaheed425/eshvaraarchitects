@@ -116,7 +116,7 @@ export const processData = {
       title: "Made for One",
       shortDesc: "Fully bespoke architectural concepts developed around one client, one site and one set of requirements.",
       fullDesc: "Our flagship pure architectural commission. Singular residences shaped as bespoke works of art, engineered without compromise for discerning homeowners.",
-      image: "/hero-dusk-residence-clean.webp",
+      image: "/concepts/the-fold.webp",
       cta: "Inquire Bespoke"
     }
   ],
